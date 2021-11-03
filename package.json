@@ -1,0 +1,38 @@
+{
+  "name": "nc-messenger",
+  "version": "1.0.0",
+  "description": "Group task building a full stack web app",
+  "main": "app.js",
+  "scripts": {
+    "setup-dbs": "psql -f ./db/setup.sql",
+    "seed": "node ./db/seeds/run-seed.js",
+    "test": "jest",
+    "seed:prod": "NODE_ENV=production DATABASE_URL=$(heroku config:get DATABASE_URL) npm run seed",
+    "start": "node listen.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrdwilson/nc-messenger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrdwilson/nc-messenger/issues"
+  },
+  "homepage": "https://github.com/jrdwilson/nc-messenger#readme",
+
+  "devDependencies": {
+    "jest": "^27.3.1",
+    "jest-sorted": "^1.0.12",
+    "supertest": "^6.1.6"
+  },
+  "dependencies": {
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "lodash": "^4.17.15",
+    "lodash.random": "^3.2.0",
+    "pg": "^8.7.1",
+    "pg-format": "^1.0.4"
+  }
+}
