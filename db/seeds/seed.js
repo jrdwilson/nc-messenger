@@ -1,4 +1,4 @@
-const db = require("../connection");
+const db = require("..");
 const format = require("pg-format");
 
 const seed = (data) => {
