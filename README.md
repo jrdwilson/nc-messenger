@@ -2,20 +2,27 @@
 
 Group task building a full stack web app
 
- #     # ####### #       #       ####### 
- #     # #       #       #       #     # 
- #     # #       #       #       #     # 
- ####### #####   #       #       #     # 
- #     # #       #       #       #     # 
- #     # #       #       #       #     # 
- ####### ####### ####### ####### ####### 
-    #    #     # #       #     # #       
-    #    #     # #       #     # #       
-    #    ####### #####   ######  #####   
-    #    #     # #       #   #   #       
-    #    #     # #       #    #  #       
-    #    #     # ####### #     # ####### 
+#
 
+#
+
+#
+
+####### ##### # # # #
+
+#
+
+#
+
+####### ####### ####### ####### ####### # # # # # # #  
+ # # # # # # #  
+ # ####### ##### ###### #####  
+ # # # # # # #  
+ # # # # # # #  
+ # # # ####### # # #######
+
+nate woz here
+Scott Caldwell-Nichols - senior tea maker
 
 ACCESSING CHAT - SENDING MESSAGES
 
@@ -35,7 +42,7 @@ EDITING PROFILE
 
 - As a user, I can change my username.
 - As a user, I can change my avatar image using a url.
+- As a user, I do not like green eggs and ham.
 
 -- Profiles need to exist to be editted
 CREATE USER??
-
