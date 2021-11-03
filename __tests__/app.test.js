@@ -10,5 +10,18 @@ describe("app.js", () => {
     test("missing endpoint should return 404 ", () => {
       return request(app).get("/api/missingEndpoint").expect(404);
     });
+
+    describe("/api/chat", () => {
+      describe("GET", () => {
+        test("GET /api/chat should return all chat data", () => {
+          return request(app)
+            .get("/api/chat")
+            .expect(200)
+            .then(({ body }) => {
+              expect(typeof body.chat).toBe("object");
+            });
+        });
+      });
+    });
   });
 });

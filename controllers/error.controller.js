@@ -1,5 +1,5 @@
 exports.handleErrors = (res, err) => {
-  // console.log(err);
+  console.log(err);
   if (err.status) {
     res.status(err.status).send({ msg: err.msg });
   } else if (err.code === "23502" || err.code === "23503") {
