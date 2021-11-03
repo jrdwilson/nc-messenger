@@ -3,6 +3,7 @@
 Group task building a full stack web app
 
 nate woz here
+Scott Caldwell-Nichols - senior tea maker
 
 ACCESSING CHAT - SENDING MESSAGES
 
