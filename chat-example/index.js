@@ -8,10 +8,19 @@ app.get('/', (req, res) => {
 });
 
 io.on('connection', (socket) => {
+  console.log('user connected');
   socket.on('chat message', msg => {
     io.emit('chat message', msg);
+    console.log(msg);
   });
+  socket.on('disconnect', () => {
+    console.log('user disconnected')
+  })
 });
+
+io.on('', () => {
+
+})
 
 http.listen(port, () => {
   console.log(`Socket.IO server running at http://localhost:${port}/`);
